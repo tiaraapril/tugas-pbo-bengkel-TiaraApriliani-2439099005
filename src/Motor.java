@@ -1,11 +1,18 @@
-public class Motor extends Kendaraan {
-    private String jenisTranmisi;
+// inheritance 
+class Motor extends Kendaraan {
+    private String jenisTransmisi;
 
+    // overloading constructor
     public Motor(String noPlat, String merk, String model, int tahun, String jenisTransmisi) {
         super(noPlat, merk, model, tahun);
-        this.jenisTranmisi = jenisTransmisi;
+        this.jenisTransmisi = jenisTransmisi;
+    }
+    public Motor(String noPlat, String merk, String model, int tahun) {
+        super(noPlat, merk, model, tahun);
+        this.jenisTransmisi = "Bebek";
     }
 
+    // overriding
     @Override
     public String getJenisKendaraan() {
         return "Motor";
@@ -13,6 +20,6 @@ public class Motor extends Kendaraan {
 
     @Override
     public String getInfoTambahan() {
-        return "Jenis Transmisi: " + jenisTranmisi;
+        return "Jenis Transmisi: " + jenisTransmisi + ", Warna: " + warna;
     }
 }

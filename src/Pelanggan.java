@@ -1,4 +1,5 @@
 class Pelanggan {
+    // encapsulation
     private String id;
     private String nama;
     private String noTelp;
@@ -11,12 +12,8 @@ class Pelanggan {
         this.alamat = alamat;
     }
 
-    // Getter dan Setter
     public String getId() { return id; }
     public String getNama() { return nama; }
     public String getNoTelp() { return noTelp; }
     public String getAlamat() { return alamat; }
-
-    public void setNoTelp(String noTelp) { this.noTelp = noTelp; }
-    public void setAlamat(String alamat) { this.alamat = alamat; }
 }

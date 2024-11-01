@@ -1,4 +1,4 @@
-// Kelas anak 1: Mobil (turunan dari Kendaraan)
+// inheritance
 class Mobil extends Kendaraan {
     private int jumlahKursi;
 
@@ -7,6 +7,7 @@ class Mobil extends Kendaraan {
         this.jumlahKursi = jumlahKursi;
     }
 
+    //overriding
     @Override
     public String getJenisKendaraan() {
         return "Mobil";
@@ -14,6 +15,6 @@ class Mobil extends Kendaraan {
 
     @Override
     public String getInfoTambahan() {
-        return "Jumlah Kursi: " + jumlahKursi;
+        return "Jumlah Kursi: " + jumlahKursi + ", Warna: " + warna;
     }
 }
